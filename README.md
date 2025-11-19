@@ -1,5 +1,7 @@
 # MaxDiff Insights Summary
 
+You can find the code for this portion of this exercise [here](https://github.com/mikaelabona/tavern/blob/main/maxdiff.R).
+
 The MaxDiff experiment reveals strong, consistent patterns in which types of political messages are most persuasive to respondents. Themes emphasizing direct family-level harms, such as cuts to healthcare, food assistance, and support for veterans, performed significantly better than broader systemic or policy-oriented messages. The highest-scoring themes—Tax Cuts for the Wealthy vs. Burdens on Working Families (avg 0.651), Healthcare and Medicaid Cuts (avg 0.567), and Food Assistance and Child Hunger (avg 0.555)—all framed policy impacts as immediate threats to the wellbeing of children, low-income families, veterans, or people with urgent healthcare needs. These messages paired emotional clarity with concrete consequences, such as losing access to medicine or having to skip meals, which appear to resonate strongly across respondents. In contrast, the lowest-performing themes centered on Environmental and Clean Energy Programs (avg 0.355) and Worker Safety and Federal Employee Benefits (avg 0.382), which tended to invoke large-scale or bureaucratic harms that feel less personally relatable.
 
 Overall, the data suggests that messages are most persuasive when they articulate clear economic tradeoffs, especially framing Trump’s policies as providing giveaways to corporations and the wealthy while placing tangible burdens on working families. Messages using specific numbers (e.g., “$50 per week in lost food assistance,” “400,000 veterans losing healthcare”) and concrete harms consistently outperformed abstract policy arguments. Emotional framing focused on family stability, children’s wellbeing, and broken promises to veterans also heightened persuasive impact. These patterns indicate that voters respond most strongly to messages linking policy decisions to immediate household consequences, rather than to broader environmental, regulatory, or institutional concerns.
@@ -84,6 +86,8 @@ Chosen from a predefined topic vocabulary (elections, healthcare, climate, econo
 I passed the question_id and question_text array to the model with strict labeling instructions. The model returned a clean JSON object that mapped each ID to a question_type and topic, which I merged back into the questions table. This step reduces manual coding, scales well for future question batches, and ensures consistency across projects.
 
 ## 3. Example Output
+
+You can find the code for this portion of the exercise [here](https://github.com/mikaelabona/tavern/blob/main/question_bank.R).
 
 Questions table (excerpt):
 ```
