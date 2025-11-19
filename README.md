@@ -30,6 +30,48 @@ This boxplot displays score variation within themes, revealing that even within 
 
 <img width="2758" height="1044" alt="image" src="https://github.com/user-attachments/assets/b1f75763-6fc7-49f1-a55c-65034f0c4e69" />
 
+
+# Housing Policy Survey
+
+Here are some results from a survey about housing policy in America. What do these results suggest about the likely success of a campaign advocating for policies that allow local governments to approve housing projects? What ambiguity is there? How confident would you be in your predictions based on these survey results, and why?
+
+## Summary of Findings
+The topline survey data point to a landscape where support for faster or automatic approval of compliant housing projects is **present but not consolidated**. Across the relevant questions, support generally falls in the **38–42%** range, with opposition close behind and a large share of respondents reporting that they are not sure. This combination suggests a public that recognizes the housing shortage, but is unsure about what solutions actually work.  
+
+Respondents consistently say housing affordability is a major issue, but opinions begin to split once questions shift from broad principles to specific policies. People express interest in solutions that make it easier to build homes, but that interest drops when policies imply changes to neighborhood patterns or density. This tension–acknowledging the shortage while resisting visible change–is the main boundary condition for any campaign.
+
+Overall, a campaign focused on streamlining approval processes is viable, especially if it centers predictability, fairness, and affordability. But success is not guaranteed. The data show that opinions are still forming, and messages that clarify the purpose and guardrails of the policy will matter.
+
+## Data Ambiguities
+Several important ambiguities limit how precisely these toplines can be interpreted:  
+
+-	No subgroup detail. Without crosstabs, we cannot see how support varies across homeowners and renters, different types of neighborhoods, or partisan groups–all dynamics that typically shape land-use politics.
+-	High uncertainty. On many key items, 20–30% of respondents say they are “not sure,” which lowers the stability of the toplines and suggests the public has limited familiarity with how housing approvals work.
+-	Contradictory attitudes. Respondents strongly agree that housing costs are too high, yet hesitate when asked to support the policies required to build more homes. These inconsistencies indicate that preferences are not deeply held and may shift with new information.
+-	Strong framing effects. Slight changes in language–for example, emphasizing “clear standards” versus “reducing neighborhood delays–produce large swings in support. This shows that public opinion is highly sensitive to how the issue is presented.
+-	No insight into intensity of preference. The toplines report support and opposition but do not show which groups feel strongly enough to organize or vote based on this issue. In housing politics, intensity often carries more weight than raw totals.
+
+These ambiguities mean the toplines are better understood as directional, not predictive. They highlight opportunity, but also the need for careful framing.
+
+## Confidence in Predictions
+Confidence in predictions should be moderate. The toplines offer a clear sense of where the public leans, but they are not strong enough to forecast outcomes with precision. Three factors contribute to this:
+
+- Absence of subgroup data prevents us from identifying reliable pockets of support or opposition.  
+- High uncertainty rates make attitudes more fluid and less predictable.  
+- Inconsistent views across items indicate that housing preferences are still forming and could shift with new information or political cues.  
+- These constraints don’t make the campaign unlikely to succeed. Rather, they show that the outcome will hinge on how the policy is framed, who communicates it, and whether the campaign addresses the underlying fears about neighborhood change and development patterns. In a context where many people are still building their mental models of the issue, strong messaging and credible messengers can meaningfully shape support.
+
+## Strategic Implications
+A campaign that wants to build support for faster approvals will need to lean into what people already agree on:  
+- the housing shortage is real,  
+- existing processes feel slow and unpredictable,  
+- and families are struggling to find homes they can afford.  
+
+The most compelling messages will focus on efficiency, fairness, and strong building standards–not density or zoning language. Positioning the reforms as a way to cut unnecessary delays while still protecting safety, quality, and community input is key.  
+
+Because many respondents do not have a clear understanding of how housing approvals work, the campaign has room to define the issue. The challenge and opportunity lie in translating a procedural change into a concrete story about affordability, access, and stability for households.  
+
+
 # Question Bank Design
 
 The goal of this question bank is to create a reusable, structured, and extensible system for storing survey questions of many different types (single choice, multi-select, open-ended, MaxDiff, etc.) along with their metadata and response options. Because the dataset contains a wide range of formats—from pairwise MaxDiff items to 0–100 feeling thermometers and open-ended questions—a flat spreadsheet is not adequate for analysis or reuse. I designed a small, normalized schema represented directly in R tibbles, without requiring a database, but following relational logic so it can scale to SQL in production.
