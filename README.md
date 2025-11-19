@@ -1,3 +1,9 @@
+Table of Contents
+**Question 1: [Maxdiff Insights Summary](https://github.com/mikaelabona/tavern/blob/main/README.md#maxdiff-insights-summary)**
+**Question 2: [Housing Policy Survey](https://github.com/mikaelabona/tavern/blob/main/README.md#housing-policy-survey)**
+**Question 3: [Question Bank Design]([https://github.com/mikaelabona/tavern/blob/main/README.md#housing-policy-survey](https://github.com/mikaelabona/tavern/blob/main/README.md#question-bank-design))**
+
+
 # MaxDiff Insights Summary
 
 You can find the code for this portion of this exercise [here](https://github.com/mikaelabona/tavern/blob/main/maxdiff.R).
