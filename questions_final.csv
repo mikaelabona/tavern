@@ -1,0 +1,121 @@
+question_id,question_text,question_type,topic,field_date,source_survey,notes
+Q001,"Do you support or oppose a policy that would provide universal pre-K education for all 3- and 4-year-olds, funded by increased taxes on households earning over $400,000 per year?",single_choice,education,2024-09-15,Example Survey,NA
+Q002,Which message is more persuasive in favor of expanding Medicaid?,maxdiff_pair,healthcare,2024-11-02,Example Survey,NA
+Q003,Which of the following issues are most important to you when deciding how to vote in the 2024 presidential election? (Select all that apply),multi_choice,elections,2024-10-20,Example Survey,NA
+Q004,"If the election for Congress were held today, would you vote for the Democratic candidate or the Republican candidate in your district?",single_choice,elections,2024-10-28,Example Survey,NA
+Q005,Do you have a favorable or unfavorable opinion of Senator Maria Johnson?,single_choice,governance,2024-08-12,Example Survey,NA
+Q006,Which message is more persuasive against the housing development proposal?,maxdiff_pair,housing,2024-07-25,Example Survey,NA
+Q007,"In your own words, what is the most important issue facing your community right now?",open_end,other,2024-06-10,Example Survey,NA
+Q008,Do you approve or disapprove of the way President Biden is handling the economy?,single_choice,economy,2024-11-01,Example Survey,NA
+Q009,"Rank the following education priorities in order of importance to you, with 1 being most important.",ranking,education,2024-09-15,Example Survey,NA
+Q010,Do you support or oppose Congress passing a continuing resolution to keep the government funded through March 2025?,single_choice,governance,2024-09-28,Example Survey,NA
+Q011,"How much do you agree or disagree with the following statement: 'The federal government should forgive up to $10,000 in student loan debt for borrowers earning less than $125,000 per year.'",numeric_scale,education,2024-05-18,Example Survey,NA
+Q012,Which of the following sources do you trust to provide accurate information about healthcare policy? (Select all that apply),multi_choice,healthcare,2024-08-22,Example Survey,NA
+Q013,Which candidate quality is more important to you?,single_choice,elections,2024-10-15,Example Survey,NA
+Q014,How likely are you to vote in the November 2024 election?,numeric_scale,elections,2024-10-05,Example Survey,NA
+Q015,"On a scale from 0 to 100, where 0 means very cold or unfavorable, and 100 means very warm or favorable, how do you feel about labor unions?",scale_0_100,labor_unions,2024-07-08,Example Survey,NA
+Q016,Do you support or oppose allowing Medicare to negotiate prescription drug prices directly with pharmaceutical companies?,single_choice,healthcare,2024-08-30,Example Survey,NA
+Q017,"If Democrats in Congress refuse to pass the budget and force a government shutdown to demand stricter border security measures, would that make you more likely or less likely to vote for Democratic candidates?",numeric_scale,elections,2024-09-22,Example Survey,NA
+Q018,Which of the following best describes your current housing situation? (Select all that apply),multi_choice,housing,2024-07-29,Example Survey,NA
+Q019,"Compared to one year ago, would you say the economy in your area is getting better or getting worse?",single_choice,economy,2024-10-12,Example Survey,NA
+Q020,Which concern about climate policy is most important to you?,single_choice,climate,2024-06-28,Example Survey,NA
+Q021,"Do you support or oppose requiring background checks for all gun sales, including private sales and gun shows?",single_choice,guns,2024-04-22,Example Survey,NA
+Q022,How confident are you that your vote will be counted accurately in the 2024 election?,numeric_scale,democracy_trust,2024-09-18,Example Survey,NA
+Q023,Do you favor or oppose allowing individuals to invest a portion of their Social Security taxes in private retirement accounts?,single_choice,social_security,2024-06-05,Example Survey,NA
+Q024,Which statement comes closer to your view about abortion?,single_choice,other,2024-05-30,Example Survey,NA
+Q025,"In your own words, what does the American Dream mean to you?",open_end,other,2024-07-14,Example Survey,NA
+Q026,Do you think the country is headed in the right direction or is on the wrong track?,single_choice,governance,2024-10-30,Example Survey,NA
+Q027,How much do you trust each of the following institutions? The federal government,numeric_scale,democracy_trust,2024-03-12,Example Survey,NA
+Q028,Do you support or oppose increasing the federal minimum wage to $15 per hour?,single_choice,economy,2024-07-08,Example Survey,NA
+Q029,Which message about infrastructure investment is more convincing?,maxdiff_pair,economy,2024-06-15,Example Survey,NA
+Q030,How serious a problem is climate change?,single_choice,climate,2024-06-28,Example Survey,NA
+Q031,Do you approve or disapprove of the way your governor is handling their job?,single_choice,governance,2024-08-25,Example Survey,NA
+Q032,"Should immigration levels to the United States be increased, decreased, or kept about the same?",single_choice,immigration,2024-09-08,Example Survey,NA
+Q033,Which of the following have you done in the past year? (Select all that apply),multi_choice,other,2024-08-03,Example Survey,NA
+Q034,How much of a problem is crime in your local community?,single_choice,crime,2024-10-08,Example Survey,NA
+Q035,Do you support or oppose providing a pathway to citizenship for undocumented immigrants who were brought to the US as children?,single_choice,immigration,2024-09-08,Example Survey,NA
+Q036,Which is more important: protecting the right to own guns or controlling gun ownership?,single_choice,guns,2024-04-22,Example Survey,NA
+Q037,How worried are you about being able to afford healthcare for you and your family?,numeric_scale,healthcare,2024-08-30,Example Survey,NA
+Q038,Please describe in your own words what concerns you most about the direction of the country.,open_end,governance,2024-10-30,Example Survey,NA
+Q039,"Do you think police violence against civilians is a very serious problem, somewhat serious problem, or not a serious problem?",single_choice,crime,2024-06-20,Example Survey,NA
+Q040,Which of these statements comes closest to your view about government?,single_choice,governance,2024-05-12,Example Survey,NA
+Q041,How much have rising prices affected your household finances over the past year?,single_choice,economy,2024-10-12,Example Survey,NA
+Q042,Do you support or oppose banning assault-style weapons?,single_choice,guns,2024-04-22,Example Survey,NA
+Q043,Which approach to reducing illegal immigration would you prefer?,single_choice,immigration,2024-09-08,Example Survey,NA
+Q044,How much do you trust each of the following institutions? The news media,numeric_scale,democracy_trust,2024-03-12,Example Survey,NA
+Q045,"On a scale from 0 to 100, how would you rate the current state of the economy?",scale_0_100,economy,2024-10-12,Example Survey,NA
+Q046,Do you support or oppose the Affordable Care Act (Obamacare)?,single_choice,healthcare,2024-08-30,Example Survey,NA
+Q047,"If Republicans in Congress force a government shutdown over spending disagreements in December 2024, who would you blame more?",single_choice,governance,2024-11-05,Example Survey,NA
+Q048,Which of the following best describes your employment status?,single_choice,labor_unions,2024-07-18,Example Survey,NA
+Q049,"In your own words, what do you think are the biggest challenges facing young people today?",open_end,other,2024-05-25,Example Survey,NA
+Q050,How much confidence do you have in the Supreme Court?,numeric_scale,governance,2024-07-01,Example Survey,NA
+Q051,Do you support or oppose requiring public schools to allow transgender students to use bathrooms matching their gender identity?,single_choice,education,2024-06-12,Example Survey,NA
+Q052,Which party do you trust more to handle the economy?,single_choice,economy,2024-10-25,Example Survey,NA
+Q053,"Should marijuana be legal for recreational use, legal only for medical use, or not be legal at all?",single_choice,other,2024-04-18,Example Survey,NA
+Q054,How concerned are you about foreign interference in US elections?,numeric_scale,elections,2024-09-18,Example Survey,NA
+Q055,Which energy source should the US prioritize developing?,single_choice,climate,2024-08-14,Example Survey,NA
+Q056,Do you approve or disapprove of the way Congress is handling its job?,single_choice,governance,2024-10-28,Example Survey,NA
+Q057,How much have you heard about the proposal to expand the Supreme Court from 9 to 13 justices?,single_choice,governance,2024-07-01,Example Survey,NA
+Q058,Which of these issues should be the top priority for Congress in 2025? (Select up to three),multi_choice,governance,2024-11-10,Example Survey,NA
+Q059,"In your own words, what would make you feel more financially secure?",open_end,economy,2024-10-12,Example Survey,NA
+Q060,Do you support or oppose eliminating the Electoral College and electing the president by national popular vote?,single_choice,democracy_trust,2024-05-20,Example Survey,NA
+Q061,Which statement is closer to your view about the 2020 presidential election?,single_choice,elections,2024-09-18,Example Survey,NA
+Q062,How much do you trust each of the following institutions? Public schools,numeric_scale,education,2024-03-12,Example Survey,NA
+Q063,Do you support or oppose providing free community college tuition for all Americans?,single_choice,education,2024-05-18,Example Survey,NA
+Q064,Which message about tax policy is more persuasive?,maxdiff_pair,economy,2024-06-25,Example Survey,NA
+Q065,How worried are you about you or someone in your family contracting COVID-19?,numeric_scale,healthcare,2024-03-05,Example Survey,NA
+Q066,"Do you think the US should increase, decrease, or maintain current levels of military spending?",single_choice,foreign_policy,2024-08-20,Example Survey,NA
+Q067,"Rank these healthcare priorities in order of importance, with 1 being most important.",ranking,healthcare,2024-08-30,Example Survey,NA
+Q068,How often do you feel that the political system works for people like you?,numeric_scale,democracy_trust,2024-07-22,Example Survey,NA
+Q069,"In your own words, what does democracy mean to you?",open_end,democracy_trust,2024-09-28,Example Survey,NA
+Q070,Do you support or oppose requiring voter ID at polling places?,single_choice,elections,2024-09-18,Example Survey,NA
+Q071,Which of the following have you experienced in the past year? (Select all that apply),multi_choice,other,2024-10-12,Example Survey,NA
+Q072,Do you think race relations in the United States are generally good or generally bad?,single_choice,social_security,2024-06-20,Example Survey,NA
+Q073,"Should the federal government guarantee health insurance for all Americans, or should health insurance be left to private companies?",single_choice,healthcare,2024-08-30,Example Survey,NA
+Q074,How much influence do you think wealthy donors have on political decisions?,numeric_scale,governance,2024-07-28,Example Survey,NA
+Q075,Do you support or oppose the death penalty for persons convicted of murder?,single_choice,crime,2024-06-20,Example Survey,NA
+Q076,Which political leader would you most like to see run for president in 2028?,single_choice,elections,2024-11-08,Example Survey,NA
+Q077,How much do you trust each of the following institutions? Large corporations,numeric_scale,economy,2024-03-12,Example Survey,NA
+Q078,Do you support or oppose requiring companies to provide paid family and medical leave?,single_choice,labor_unions,2024-07-08,Example Survey,NA
+Q079,Which concern about AI and automation worries you most?,single_choice,other,2024-10-15,Example Survey,NA
+Q080,Should the US prioritize developing new fossil fuel resources or transitioning to renewable energy?,single_choice,climate,2024-08-14,Example Survey,NA
+Q081,How much has your opinion of Donald Trump changed since he left office in January 2021?,numeric_scale,governance,2024-10-20,Example Survey,NA
+Q082,Do you support or oppose reparations for descendants of enslaved people in America?,single_choice,social_security,2024-06-20,Example Survey,NA
+Q083,Which of the following social media platforms do you use regularly? (Select all that apply),multi_choice,other,2024-09-12,Example Survey,NA
+Q084,"In your own words, what changes would you most like to see in your local schools?",open_end,education,2024-09-15,Example Survey,NA
+Q085,How often do you discuss politics with friends or family?,numeric_scale,other,2024-08-03,Example Survey,NA
+Q086,"Do you think the US is spending too much, too little, or about the right amount on foreign aid?",single_choice,foreign_policy,2024-08-20,Example Survey,NA
+Q087,Which message about child care policy is more effective?,maxdiff_pair,other,2024-07-30,Example Survey,NA
+Q088,How satisfied are you with the quality of public transportation in your area?,single_choice,housing,2024-06-18,Example Survey,NA
+Q089,Do you support or oppose expanding access to mail-in voting?,single_choice,democracy_trust,2024-09-18,Example Survey,NA
+Q090,Which economic system do you think is best for America?,single_choice,economy,2024-05-28,Example Survey,NA
+Q091,How much do you trust each of the following institutions? Religious institutions,numeric_scale,other,2024-03-12,Example Survey,NA
+Q092,"Do you think the legal system in the US treats all people fairly, or does it favor some groups?",single_choice,crime,2024-06-20,Example Survey,NA
+Q093,What advice would you give to young people who are just starting to pay attention to politics?,open_end,other,2024-08-03,Example Survey,NA
+Q094,Should the government do more or less to regulate what is taught in public schools?,single_choice,education,2024-09-15,Example Survey,NA
+Q095,Do you support or oppose term limits for members of Congress?,single_choice,governance,2024-07-16,Example Survey,NA
+Q096,Which aspect of inflation concerns you most?,single_choice,economy,2024-10-12,Example Survey,NA
+Q097,Do you think social media companies should do more or less to moderate content on their platforms?,single_choice,other,2024-10-15,Example Survey,NA
+Q098,How much have you heard about the conflict between Israel and Hamas that began in October 2023?,single_choice,foreign_policy,2024-11-02,Example Survey,NA
+Q099,Which of these values is most important to you personally?,single_choice,other,2024-07-14,Example Survey,NA
+Q100,"In your own words, how has the economy affected your life over the past year?",open_end,economy,2024-10-12,Example Survey,NA
+Q101,Do you approve or disapprove of how your local police department is doing its job?,single_choice,crime,2024-10-08,Example Survey,NA
+Q102,"Should the US do more to address global climate change even if it hurts the economy, or should the US prioritize economic growth even if it hurts the environment?",single_choice,climate,2024-06-28,Example Survey,NA
+Q103,Which of these news sources do you trust most for accurate political information?,single_choice,democracy_trust,2024-09-12,Example Survey,NA
+Q104,How much of a threat is China to the United States?,single_choice,foreign_policy,2024-08-20,Example Survey,NA
+Q105,Do you support or oppose the US providing military aid to Ukraine?,single_choice,foreign_policy,2024-11-02,Example Survey,NA
+Q106,"Thinking about your local community, what is one thing you would change if you could?",open_end,other,2024-06-10,Example Survey,NA
+Q107,How often do you feel stressed about the state of politics in America?,numeric_scale,other,2024-10-20,Example Survey,NA
+Q108,Do you think the next generation of Americans will be better off or worse off than people are today?,single_choice,other,2024-07-14,Example Survey,NA
+Q109,Which is a bigger problem in this country: people being too easily offended or people saying offensive things?,single_choice,other,2024-06-15,Example Survey,NA
+Q110,How much do you trust each of the following institutions? The military,numeric_scale,foreign_policy,2024-03-12,Example Survey,NA
+Q111,Do you support or oppose making Election Day a national holiday?,single_choice,elections,2024-09-18,Example Survey,NA
+Q112,Which factor is most important to you when deciding which news sources to trust?,single_choice,democracy_trust,2024-09-12,Example Survey,NA
+Q113,"If you could ask the next president one question, what would it be?",open_end,governance,2024-11-10,Example Survey,NA
+Q114,How much responsibility should the federal government have for ensuring all Americans have healthcare coverage?,numeric_scale,healthcare,2024-08-30,Example Survey,NA
+Q115,Do you support or oppose statehood for Washington DC?,single_choice,governance,2024-05-20,Example Survey,NA
+Q116,Which approach to policing reform would you prefer?,single_choice,crime,2024-06-20,Example Survey,NA
+Q117,"On a scale from 0 to 100, how would you rate the state of democracy in America today?",scale_0_100,democracy_trust,2024-09-28,Example Survey,NA
+Q118,Do you support or oppose allowing parents to use public funds (vouchers) to send their children to private schools?,single_choice,education,2024-09-15,Example Survey,NA
+Q119,What is the biggest threat to democracy in America today?,open_end,democracy_trust,2024-09-28,Example Survey,NA
+Q120,"Which of the following statements comes closest to your view about diversity, equity, and inclusion (DEI) programs?",single_choice,other,2024-08-05,Example Survey,NA
