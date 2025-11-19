@@ -28,3 +28,92 @@ This boxplot displays score variation within themes, revealing that even within 
 
 <img width="2758" height="1044" alt="image" src="https://github.com/user-attachments/assets/b1f75763-6fc7-49f1-a55c-65034f0c4e69" />
 
+# Question Bank Design
+
+The goal of this question bank is to create a reusable, structured, and extensible system for storing survey questions of many different types (single choice, multi-select, open-ended, MaxDiff, etc.) along with their metadata and response options. Because the dataset contains a wide range of formats—from pairwise MaxDiff items to 0–100 feeling thermometers and open-ended questions—a flat spreadsheet is not adequate for analysis or reuse. I designed a small, normalized schema represented directly in R tibbles, without requiring a database, but following relational logic so it can scale to SQL in production.
+
+## 1. Core Structure
+The question bank consists of three linked tables:
+
+**A. questions (one row per conceptual question)**
+
+Fields:
+- question_id — stable identifier like “Q003”
+- question_text — full wording
+- question_type — automatically inferred (e.g., single_choice, multi_choice, maxdiff_pair, open_end, scale_0_100, ranking)
+- topic — primary subject area (e.g., healthcare, elections, governance)
+- field_date — first fielded date
+- source_survey — originating project
+- notes — optional programming notes
+
+This table stores the essential content and metadata of each question. By separating question_type and topic from the question wording, the bank can flexibly route questions into different survey platforms, track trends, and reuse items.
+
+**B. response_options (one row per response option per question)**
+
+Fields:
+- question_id — links back to questions
+- option_value — backend-coded value
+- option_label — text shown to respondents
+- option_order — original order
+- is_exclusive — for items like “None of the above”
+
+Any question with selectable responses (single or multi-choice, ranking, scales) gets its options here. Questions that are open-ended simply have no rows in this table.
+
+**C. question_tags (optional tagging table)**
+
+Fields:
+- question_id, tag
+
+Tags allow many-to-many categorization, e.g., a question about voting security could be tagged both elections and democracy_trust. This makes searching and filtering easier than storing a single topic field.
+
+## 2. Use of OpenAI for Metadata Classification (See code example)
+
+Instead of manually coding 120+ questions, I used OpenAI’s API to automatically classify each question by:
+
+1. _question_type_
+
+Examples:
+- “Select all that apply” → multi_choice
+- “In your own words…” → open_end
+- “Which message is more persuasive…” → maxdiff_pair
+- “On a scale from 0 to 100…” → scale_0_100
+
+2.	_topic_
+Chosen from a predefined topic vocabulary (elections, healthcare, climate, economy, governance, etc.).
+
+I passed the question_id and question_text array to the model with strict labeling instructions. The model returned a clean JSON object that mapped each ID to a question_type and topic, which I merged back into the questions table. This step reduces manual coding, scales well for future question batches, and ensures consistency across projects.
+
+## 3. Example Output
+
+Questions table (excerpt):
+```
+# A tibble: 5 × 7
+  question_id question_text                      question_type topic     field_date …
+1 Q001        … universal pre-K …                single_choice education 2024-09-15 …
+2 Q002        … persuasive in favor of Medicaid? maxdiff_pair  healthcare 2024-11-02 …
+3 Q003        … issues most important …          multi_choice  elections  2024-10-20 …
+4 Q004        … if election held today …         single_choice elections  2024-10-28 …
+5 Q005        … opinion of Senator …             single_choice governance 2024-08-12 …
+```
+
+Response options (Q003 example):
+```
+# A tibble: 10 × 5
+question_id option_label option_order
+Q003        Economy …            1
+Q003        Healthcare           2
+Q003        Education            3
+```
+
+Tags:
+```
+Q001 → education  
+Q002 → healthcare  
+Q003 → elections  
+Q004 → elections  
+Q005 → governance
+```
+
+## 4. Outcome 
+This question bank structure creates a flexible, scalable foundation for storing survey questions across projects. By separating question text, metadata, and response options into clean relational tables, it supports consistent reuse, easy editing, and exporting to different survey platforms. Integrating OpenAI to automatically classify each question’s type and topic dramatically reduces manual coding effort while maintaining systematic organization. The result is a compact but powerful schema that works well within an in-memory R workflow today and can be expanded into a full SQL-backed question library as survey operations grow.
+
