@@ -33,8 +33,6 @@ This boxplot displays score variation within themes, revealing that even within 
 
 # Housing Policy Survey
 
-Here are some results from a survey about housing policy in America. What do these results suggest about the likely success of a campaign advocating for policies that allow local governments to approve housing projects? What ambiguity is there? How confident would you be in your predictions based on these survey results, and why?
-
 ## Summary of Findings
 The topline survey data point to a landscape where support for faster or automatic approval of compliant housing projects is **present but not consolidated**. Across the relevant questions, support generally falls in the **38–42%** range, with opposition close behind and a large share of respondents reporting that they are not sure. This combination suggests a public that recognizes the housing shortage, but is unsure about what solutions actually work.  
 
@@ -130,6 +128,7 @@ I passed the question_id and question_text array to the model with strict labeli
 ## 3. Example Output
 
 You can find the code for this portion of the exercise [here](https://github.com/mikaelabona/tavern/blob/main/question_bank.R).
+Please also see the output file to see the final categorizations/classifications [here](https://github.com/mikaelabona/tavern/blob/main/questions_final.csv). 
 
 Questions table (excerpt):
 ```
